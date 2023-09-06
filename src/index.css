@@ -1,0 +1,163 @@
+@import url(../assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+@import url(../assets/fonts/static/Inter-Bold.ttf);
+@import url(../assets/fonts/static/Inter-Regular.ttf);
+@import url(../assets/fonts/static/Inter-ExtraBold.ttf);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink-color: #f35c56;
+  --dark--blue-color: #00001a;
+  --gold-color: #eda53e;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler,
+#close-nav {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: none;
+}
+
+.navbar {
+  height: 100px;
+}
+
+.nav-link {
+  color: #000;
+  transition: color 0.3s ease;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--pink-color) !important;
+}
+
+.main-btn {
+  padding-inline: 40px;
+  letter-spacing: 4px;
+  border-radius: 0;
+  background-color: var(--pink-color);
+}
+
+.main-btn:hover {
+  opacity: 0.7;
+  color: #fff;
+  background-color: var(--pink-color);
+}
+
+.content-text .title {
+  color: var(--dark--blue-color);
+}
+
+#news {
+  background-color: var(--dark--blue-color);
+  text-transform: capitalize;
+}
+
+#news-head {
+  font-size: 4rem;
+  color: var(--gold-color);
+}
+
+.card {
+  border: none;
+  padding-block: 2rem 0;
+  border-radius: 0;
+  background: none;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+#mobile-image {
+  display: none;
+}
+
+hr {
+  background-color: silver;
+  height: 2px;
+}
+h1 {
+  font-size: 4rem;
+}
+
+@media (width<992px) {
+  #news-head {
+    font-size: 3rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+@media (width<768px) {
+  :root {
+    font-size: 14px;
+  }
+  .card-subtitle {
+    font-size: 4rem !important;
+  }
+  #mobile-image {
+    display: block;
+  }
+  #desktop-image {
+    display: none;
+  }
+  .card-title {
+    font-size: 2rem;
+  }
+  .nav-link {
+    font-size: 2rem;
+  }
+  footer .card-text {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (width<576px) {
+  :root {
+    font-size: 12px;
+  }
+
+  footer .card-text {
+    font-size: 1.3rem;
+  }
+  .card-subtitle {
+    font-size: 3.5rem !important;
+  }
+  footer .card-title {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 2rem;
+  }
+}
+
+@media (width<=375px) {
+  :root {
+    font-size: 12px;
+  }
+  .card-subtitle {
+    font-size: 2rem !important;
+  }
+  footer .card-title {
+    font-size: 2rem;
+  }
+}
